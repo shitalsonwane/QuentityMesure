@@ -68,4 +68,10 @@ describe("Tesing for length",function(){
         let ans=lenghth1.compare(lenghth2)
         assert.equal(ans,false)
     })
+    it("should return equal when 1 ft and 12 inch",function(){
+        let lenghth1=new quantityMeasurement(unit.FEET,1)
+        let lenghth2=new quantityMeasurement(unit.INCH,12)
+        let ans=lenghth1.compare(lenghth2)
+        assert.equal(ans,true)
+    })
 })

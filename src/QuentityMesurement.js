@@ -7,7 +7,7 @@ class Mesurement{
     }
     compare(that){
         if((this.value==null || that.value==null) || (this.value!=that.value)){
-            return false
+            return this.unit * this.value == that.unit * that.value
         }
         else if((this.unit!=that.unit) || (this.value==that.value) || (this.unit==that.unit)){
             return this.unit * this.value == that.unit * that.value
