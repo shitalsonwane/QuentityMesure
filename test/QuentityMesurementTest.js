@@ -98,4 +98,10 @@ describe("Tesing for length",function(){
         let ans=lenghth1.compare(lenghth2)
         assert.equal(ans,true)
     })
+    it("should return equal when 1 yard and 36 inch",function(){
+        let lenghth1=new quantityMeasurement(unit.YARD,1)
+        let lenghth2=new quantityMeasurement(unit.INCH,36)
+        let ans=lenghth1.compare(lenghth2)
+        assert.equal(ans,true)
+    })
 })
