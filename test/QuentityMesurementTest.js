@@ -110,4 +110,10 @@ describe("Tesing for length",function(){
         let ans=lenghth1.compare(lenghth2)
         assert.equal(ans,true)
     })
+    it("should return equal when 2 in and 5 cm",function(){
+        let lenghth1=new quantityMeasurement(unit.INCH,2)
+        let lenghth2=new quantityMeasurement(unit.CM,5)
+        let ans=lenghth1.compare(lenghth2)
+        assert.equal(ans,true)
+    })
 })
