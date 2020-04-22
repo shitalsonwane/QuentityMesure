@@ -8,5 +8,8 @@ class Mesurement{
     compare(that){
         return this.unit * this.value == that.unit * that.value
     }
+    addition(that){
+        return this.unit*this.value + that.unit*that.value
+    }
 }
 module.exports=Mesurement

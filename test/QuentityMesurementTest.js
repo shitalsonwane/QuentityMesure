@@ -2,7 +2,7 @@ var assert=require("chai").assert
 var quantityMeasurement = require('../src/QuentityMesurement');
 var unit=require('../src/Unit')
 
-describe("Tesing for length",function(){
+describe("length Compare test case",function(){
     it("should return equal when 1 feet and 1 feet",function(){
         let lenghth1=new quantityMeasurement(unit.FEET,1)
         let lenghth2=new quantityMeasurement(unit.FEET,1)
@@ -116,4 +116,13 @@ describe("Tesing for length",function(){
         let ans=lenghth1.compare(lenghth2)
         assert.equal(ans,true)
     })
+})
+describe("length Addition test case",function(){
+    it("should return 2 when 1 inch and 1 inch  ",function(){
+        let lenghth1=new quantityMeasurement(unit.INCH,1)
+        let lenghth2=new quantityMeasurement(unit.INCH,1)
+        let ans=lenghth1.addition(lenghth2)
+        assert.equal(ans,2)
+    })
+
 })
