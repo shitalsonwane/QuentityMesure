@@ -143,3 +143,13 @@ describe("length Addition test case",function(){
         assert.equal(ans,3)
     })
 })
+
+describe("Volume Compare test case",function(){
+    it("should return equal when 1 gallon and 3.78 ml",function(){
+        let volum1=new quantityMeasurement(unit.GALLON,1)
+        let volum2=new quantityMeasurement(unit.ML,3.78)
+        let ans=volum1.compare(volum2)
+        assert.equal(ans,true)
+    })
+})
+
