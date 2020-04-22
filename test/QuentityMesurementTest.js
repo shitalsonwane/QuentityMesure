@@ -145,9 +145,9 @@ describe("length Addition test case",function(){
 })
 
 describe("Volume Compare test case",function(){
-    it("should return equal when 1 gallon and 3.78 ml",function(){
+    it("should return equal when 1 gallon and 3.78 litre",function(){
         let volum1=new quantityMeasurement(unit.GALLON,1)
-        let volum2=new quantityMeasurement(unit.ML,3.78)
+        let volum2=new quantityMeasurement(unit.LIT,3.78)
         let ans=volum1.compare(volum2)
         assert.equal(ans,true)
     })
@@ -162,7 +162,7 @@ describe("Volume Compare test case",function(){
 describe("Volume Addition test case",function(){
     it("should return 7.56 when 1 gallon and 3.78 ml",function(){
         let volume1=new quantityMeasurement(unit.GALLON,1)
-        let volume2=new quantityMeasurement(unit.ML,3.78)
+        let volume2=new quantityMeasurement(unit.LIT,3.78)
         let ans=volume1.addition(volume2)
         assert.equal(ans,7.56)
     })
