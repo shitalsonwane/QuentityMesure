@@ -151,5 +151,11 @@ describe("Volume Compare test case",function(){
         let ans=volum1.compare(volum2)
         assert.equal(ans,true)
     })
+    it("should return equal when 1 litre and 1000 ml",function(){
+        let volum1=new quantityMeasurement(unit.LIT,1)
+        let volum2=new quantityMeasurement(unit.ML,1000)
+        let ans=volum1.compare(volum2)
+        assert.equal(ans,true)
+    })
 })
 
