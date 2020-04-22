@@ -173,3 +173,12 @@ describe("Volume Addition test case",function(){
         assert.equal(ans,2)
     })
 })
+
+describe("Weight compare test case",function(){
+    it("should return equal when 1 kg and 1000 grams",function(){
+        let weight1=new quantityMeasurement(unit.KILOGRAMS,1)
+        let weight2=new quantityMeasurement(unit.GRAMS,1000)
+        let ans=weight1.compare(weight2)
+        assert.equal(ans,true)
+    })
+})
