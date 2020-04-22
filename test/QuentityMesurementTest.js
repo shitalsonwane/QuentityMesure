@@ -136,4 +136,10 @@ describe("length Addition test case",function(){
         let ans=lenghth1.addition(lenghth2)
         assert.equal(ans,24)
     })
+    it("should return 3 when addition of 2 inch and 2.5 cm  ",function(){
+        let lenghth1=new quantityMeasurement(unit.INCH,2)
+        let lenghth2=new quantityMeasurement(unit.CM,2.5)
+        let ans=lenghth1.addition(lenghth2)
+        assert.equal(ans,3)
+    })
 })
