@@ -130,4 +130,10 @@ describe("length Addition test case",function(){
         let ans=lenghth1.addition(lenghth2)
         assert.equal(ans,14)
     })
+    it("should return 24 when addition of 1 feet and 1 feet  ",function(){
+        let lenghth1=new quantityMeasurement(unit.FEET,1)
+        let lenghth2=new quantityMeasurement(unit.FEET,1)
+        let ans=lenghth1.addition(lenghth2)
+        assert.equal(ans,24)
+    })
 })
