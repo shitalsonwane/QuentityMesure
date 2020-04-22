@@ -118,11 +118,16 @@ describe("length Compare test case",function(){
     })
 })
 describe("length Addition test case",function(){
-    it("should return 2 when 1 inch and 1 inch  ",function(){
-        let lenghth1=new quantityMeasurement(unit.INCH,1)
-        let lenghth2=new quantityMeasurement(unit.INCH,1)
+    it("should return 4 when addition of 2 inch and 2 inch  ",function(){
+        let lenghth1=new quantityMeasurement(unit.INCH,2)
+        let lenghth2=new quantityMeasurement(unit.INCH,2)
         let ans=lenghth1.addition(lenghth2)
-        assert.equal(ans,2)
+        assert.equal(ans,4)
     })
-
+    it("should return 14 when addition of 1 feet and 2 inch  ",function(){
+        let lenghth1=new quantityMeasurement(unit.FEET,1)
+        let lenghth2=new quantityMeasurement(unit.INCH,2)
+        let ans=lenghth1.addition(lenghth2)
+        assert.equal(ans,14)
+    })
 })
