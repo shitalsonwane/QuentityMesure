@@ -166,4 +166,10 @@ describe("Volume Addition test case",function(){
         let ans=volume1.addition(volume2)
         assert.equal(ans,7.56)
     })
+    it("should return 2 when 1 litre and 1000 ml",function(){
+        let volume1=new quantityMeasurement(unit.LIT,1)
+        let volume2=new quantityMeasurement(unit.ML,1000)
+        let ans=volume1.addition(volume2)
+        assert.equal(ans,2)
+    })
 })
