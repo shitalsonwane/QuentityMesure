@@ -188,3 +188,13 @@ describe("Weight compare test case",function(){
         assert.equal(ans,true)
     })
 })
+
+describe("Weight Addition test case",function(){
+    it("should return 1001 when 1 tonne and 1000 grams",function(){
+        let weight1=new quantityMeasurement(unit.TONNE,1)
+        let weight2=new quantityMeasurement(unit.GRAMS,1000)
+        let ans=weight1.addition(weight2)
+        assert.equal(ans,1001)
+    })
+})
+
