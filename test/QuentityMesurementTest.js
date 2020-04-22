@@ -181,4 +181,10 @@ describe("Weight compare test case",function(){
         let ans=weight1.compare(weight2)
         assert.equal(ans,true)
     })
+    it("should return equal when 1 tonne and 1000 kgs",function(){
+        let weight1=new quantityMeasurement(unit.TONNE,1)
+        let weight2=new quantityMeasurement(unit.KILOGRAMS,1000)
+        let ans=weight1.compare(weight2)
+        assert.equal(ans,true)
+    })
 })
