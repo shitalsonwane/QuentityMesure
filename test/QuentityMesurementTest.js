@@ -198,3 +198,29 @@ describe("Weight Addition test case",function(){
     })
 })
 
+describe('Temprature Compare test cases', function () {
+    it('should return equal when of 1 fara and 1 fara.', function () {
+      let temprature1 = new quantityMeasurement(unit.FAHRENHEIT, 1);
+      let temprature2 = new quantityMeasurement(unit.FAHRENHEIT, 1);
+      let ans = temprature1.compareTemprature(temprature2);
+      assert.equal(ans, true);
+    });
+    it('should return equal when of 1 fara and 0 fara.', function () {
+      let temprature1 = new quantityMeasurement(unit.FAHRENHEIT, 1);
+      let temprature2 = new quantityMeasurement(unit.FAHRENHEIT, 0);
+      let ans = temprature1.compareTemprature(temprature2);
+      assert.equal(ans, false);
+    });
+    it('should return equal when of 1 fara and -17.22 celcious.', function () {
+      let temprature1 = new quantityMeasurement(unit.FAHRENHEIT, 212);
+      let temprature2 = new quantityMeasurement(unit.CELSIUS, 100);
+      let ans = temprature1.compareTemprature(temprature2);
+      assert.equal(ans, true);
+    });
+    it('should return equal when of 50 fara and 10 celcious.', function () {
+      let temprature1 = new quantityMeasurement(unit.FAHRENHEIT, 50);
+      let temprature2 = new quantityMeasurement(unit.CELSIUS, 10);
+      let ans = temprature1.compareTemprature(temprature2);
+      assert.equal(ans, true);
+    });
+});

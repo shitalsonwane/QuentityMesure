@@ -8,7 +8,9 @@ const Units={
     GALLON:3.78,
     KILOGRAMS:1,
     GRAMS:0.001,
-    TONNE:1000
+    TONNE:1000,
+    CELSIUS:'celsius',
+    FAHRENHEIT:'fahrenheit'
 };
 module.exports=Units
 
