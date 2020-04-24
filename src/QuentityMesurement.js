@@ -5,12 +5,15 @@ class Mesurement{
         this.unit=unit
         this.value=value
     }
+    //COMPARE THE UNITS
     compare(that){
         return this.unit * this.value == that.unit * that.value
     }
+    //ADDING THE UNITS
     addition(that){
         return this.unit*this.value + that.unit*that.value
     }
+    //COMPARE THE TEMPRATURE
     compareTemprature(that) {
 		if (this.unit == that.unit) {
 			return this.value == that.value;
